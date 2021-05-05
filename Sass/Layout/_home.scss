@@ -1,0 +1,8 @@
+nav { 
+    div { @include flexcenter;
+        background-image:linear-gradient( #afafaf 0%, #afafaf 3%, #F2F2F2 4%);}
+        #map_location {
+            i {padding-top: 20px;}
+            p {padding: 20px }
+           }
+}

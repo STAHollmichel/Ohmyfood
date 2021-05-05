@@ -3,5 +3,6 @@
     
 }
 @mixin flexrow { display: flex;
-                 flex-direction: row;
+                 flex-flow: row wrap;
+                 justify-content: center;
 }
