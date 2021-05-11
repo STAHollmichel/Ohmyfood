@@ -1,1 +1,1 @@
-nav .primarybtn {background-color:$primarybtn;}
+.primarybtn { @include primarybtn }

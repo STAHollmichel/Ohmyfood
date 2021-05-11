@@ -21,8 +21,28 @@ body a {
   color: black;
 }
 
-nav .primarybtn {
-  background-color: linear-gradient(#ff79da 0%, #9356dc 100%);
+.primarybtn {
+  cursor: pointer;
+  opacity: 0.8;
+  border: none;
+  border-radius: 25px;
+  padding: 16px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 20px 10px 40px 10px;
+  background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
+  -webkit-box-shadow: 3px 3px 10px #bfbfbf;
+          box-shadow: 3px 3px 10px #bfbfbf;
+}
+
+.primarybtn:hover {
+  opacity: 0.65;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 3px 3px 10px #0d0d0d;
+          box-shadow: 3px 3px 10px #0d0d0d;
+  transition: 0.3s;
 }
 
 header {

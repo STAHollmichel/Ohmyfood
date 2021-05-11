@@ -6,3 +6,30 @@
                  flex-flow: row wrap;
                  justify-content: center;
 }
+
+@mixin primarybtn {
+    cursor: pointer;
+    opacity: 0.8;
+    border: none;
+    border-radius: 25px;
+    padding: 16px 20px;
+    color: $color-light;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 20px 10px 40px 10px;
+    background: linear-gradient(177deg, $color-secondary 10%, $color-primary 90%);
+    @include box-shadow;
+    &:hover {
+      opacity: 0.65;
+      transition: 0.3s;
+      @include box-shadow--dark;
+      transition: 0.3s;}
+}
+
+@mixin box-shadow($colour: $color-shadow) {
+    box-shadow: 3px 3px 10px $colour;
+}
+
+@mixin box-shadow--dark($colour: $color-shadow--dark) {
+    box-shadow: 3px 3px 10px $colour;
+}
