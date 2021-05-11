@@ -1,2 +1,7 @@
-$primarybtn:linear-gradient(#ff79da 0%, #9356dc 100%);
-$secondarybtn: #ff79da;
+$color-primary: #9256dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+
+$color-shadow: #bfbfbf;
+$color-shadow--dark: darken($color-shadow, 70);
+$color-light: #ffffff;
