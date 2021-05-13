@@ -113,6 +113,10 @@ footer strong {
   font-weight: 400;
 }
 
+body {
+  counter-reset: list_number;
+}
+
 nav div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,7 +148,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 #map_location i, p {
@@ -180,6 +184,19 @@ h3 {
   margin: 40px 10px 10px 30px;
 }
 
+#how_it_works ol li::before {
+  content: counter(list_number);
+  counter-increment: list_number;
+  background-color: #9256dc;
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 2px 6.5px;
+  position: absolute;
+  left: -4vw;
+  top: 7vw;
+  font-weight: 400;
+}
+
 #how_it_works ol {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,6 +210,10 @@ h3 {
           justify-content: center;
 }
 
+#how_it_works ol p {
+  color: black;
+}
+
 #how_it_works li {
   width: 85%;
   display: -webkit-box;
@@ -203,7 +224,7 @@ h3 {
           box-shadow: 3px 3px 10px #bfbfbf;
   padding: 25px;
   border-radius: 25px;
-  margin: 12px;
+  margin: 10px 10px 10px 30px;
   font-size: 0.9em;
   font-weight: 500;
   position: relative;
@@ -211,6 +232,14 @@ h3 {
 
 #how_it_works i {
   padding-right: 20px;
+}
+
+#how_it_works .grey_icon {
+  color: grey;
+}
+
+#how_it_works .violet_icon {
+  color: #9256dc;
 }
 
 #restaurant_ads {
@@ -238,19 +267,63 @@ h3 {
 
 .restaurant_ad {
   width: 90%;
+  height: 70vw;
   -webkit-box-shadow: 3px 3px 10px #bfbfbf;
           box-shadow: 3px 3px 10px #bfbfbf;
-  border-radius: 15px;
+  border-radius: 13px;
   margin: 10px;
 }
 
 .restaurant_ad img {
   width: 100%;
-  height: 50vw;
-  border-radius: 15px 15px 0px 0px;
+  height: 49vw;
+  border-radius: 13px 13px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 40% 60%;
+     object-position: 40% 60%;
+}
+
+.restaurant_ad figcaption {
+  padding: 10px 11px;
+}
+
+.restaurant_ad p {
+  font-size: 0.95em;
 }
 
 .heart_like {
   position: relative;
+}
+
+.heart_like .heart_empty {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+.heart_like .heart_full {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+.heart_like .heart_full:hover {
+  display: initial;
+}
+
+.heart_like p {
+  position: absolute;
+  right: 0px;
+  bottom: 171px;
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */
