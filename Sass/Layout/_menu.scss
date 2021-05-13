@@ -1,0 +1,114 @@
+header {
+    position:relative;
+    span {position:absolute;
+          left:20px;}
+}
+
+main {
+    img { width:100%;
+        height:60vw;
+    }
+}
+
+#menu_card {
+    border-radius: 40px 40px 0px 0px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -40px;
+}
+
+#restaurant_id {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding:30px 20px;
+}
+
+.heart_empty_menu {
+    position:absolute;
+    top:35px;
+    right:35px;
+    font-size: 1.4em;
+}
+
+.heart_full_menu {
+    display: none;
+    position:absolute;
+    top:35px;
+    right:35px;
+    font-size: 1.4em;
+}
+
+.menu_type {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9em;
+    padding: 0px 20px;
+    position: relative;
+    margin: 0px 0px 10px 0px;
+}
+
+.menu_type::after {
+    content: "";
+position: absolute;
+width: 40px;
+height: 3px;
+bottom: -7px;
+left: 20px;
+background-color: #99e2d0;
+}
+
+.menu_content {
+   display: flex;
+   flex-direction: column;
+   
+   
+}
+
+.menu_option {
+    height:57px;
+    box-shadow: 3px 3px 10px #bfbfbf;
+    border-radius: 12px;
+    margin: 8px 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    div { white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+    h3 { padding: 10px 0px 3px 10px; 
+         font-size: 0.97em;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+       }
+    p { padding:0px 30px 10px 10px;
+        font-size: 0.8em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.price_check {
+    display: flex;
+    p { align-self: flex-end;
+        padding:10px 20px;
+        font-weight: 700;
+        text-overflow: initial;}
+    span { overflow-x: hidden;
+           align-self: center;
+         }
+    i { background-color:$color-tertiary;
+        color:#FFFFFF;
+        font-size: 1.2em;
+        padding:19px 17px 19px 15px;
+         }
+}
+#order_btn {
+    @include flexcenter;
+    margin: 40px 70px 25px 70px;
+    font-size: 0.9em;
+}

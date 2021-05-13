@@ -52,12 +52,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 0px 10px 20px;
+  padding: 20px 0px 5px 40px;
 }
 
 header img {
-  width: 85%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
 }
 
 footer {
@@ -113,6 +113,154 @@ footer strong {
   font-weight: 400;
 }
 
+header {
+  position: relative;
+}
+
+header span {
+  position: absolute;
+  left: 20px;
+}
+
+main img {
+  width: 100%;
+  height: 60vw;
+}
+
+#menu_card {
+  border-radius: 40px 40px 0px 0px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: -40px;
+}
+
+#restaurant_id {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 30px 20px;
+}
+
+.heart_empty_menu {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  font-size: 1.4em;
+}
+
+.heart_full_menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  font-size: 1.4em;
+}
+
+.menu_type {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9em;
+  padding: 0px 20px;
+  position: relative;
+  margin: 0px 0px 10px 0px;
+}
+
+.menu_type::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  bottom: -7px;
+  left: 20px;
+  background-color: #99e2d0;
+}
+
+.menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu_option {
+  height: 57px;
+  -webkit-box-shadow: 3px 3px 10px #bfbfbf;
+          box-shadow: 3px 3px 10px #bfbfbf;
+  border-radius: 12px;
+  margin: 8px 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_option div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu_option h3 {
+  padding: 10px 0px 3px 10px;
+  font-size: 0.97em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu_option p {
+  padding: 0px 30px 10px 10px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price_check p {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-overflow: initial;
+}
+
+.price_check span {
+  overflow-x: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.price_check i {
+  background-color: #99e2d0;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  padding: 19px 17px 19px 15px;
+}
+
+#order_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 70px 25px 70px;
+  font-size: 0.9em;
+}
+
 body {
   counter-reset: list_number;
 }
@@ -138,7 +286,7 @@ nav #map_location p {
   font-weight: 500;
 }
 
-h1 {
+.seach_tittle {
   font-size: 1.35em;
   margin: 35px 30px 0px 35px;
 }
