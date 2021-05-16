@@ -22,7 +22,7 @@
     font-weight: 400;
     font-size: 0.9rem;
     margin: 15px 10px 40px 10px;
-    background: linear-gradient(173deg, $color-secondary 5%, $color-primary 95%);
+    background: $btn-gradient;
     @include box-shadow;
     &:hover {
       opacity: 0.65;

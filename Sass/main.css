@@ -414,6 +414,7 @@ h3 {
 }
 
 .restaurant_ad {
+  position: relative;
   width: 90%;
   height: 70vw;
   -webkit-box-shadow: 3px 3px 10px #bfbfbf;
@@ -441,32 +442,49 @@ h3 {
 }
 
 .heart_like {
-  position: relative;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
 }
 
 .heart_like .heart_empty {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-size: 1.5em;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.4em;
 }
 
 .heart_like .heart_full {
-  display: none;
+  opacity: 0;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-size: 1.5em;
+  cursor: pointer;
+  bottom: 0px;
+  right: 0px;
+  font-size: 1.4em;
+  font-style: normal;
+  background: linear-gradient(173deg, #ff79da 5%, #9256dc 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
 }
 
 .heart_like .heart_full:hover {
-  display: initial;
+  opacity: 100;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
-.heart_like p {
+.noveau_sticker {
   position: absolute;
-  right: 0px;
-  bottom: 171px;
+  right: 10px;
+  bottom: 185px;
   color: #008766;
   background-color: #99E2D0;
   padding: 5px 10px;
