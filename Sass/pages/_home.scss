@@ -74,7 +74,7 @@ h3 { font-size: 1em;}
     margin-bottom: 15vw;
     h2 { margin: 40px 10px 10px 30px;}
 }
-#ads_container { @include flexrow; 
+#container_ads { @include flexrow; 
                  align-content: space-between;
 }
 .restaurant_ad {

@@ -1,18 +1,22 @@
 @-webkit-keyframes course_menu {
     from {
       opacity: 0;
+
     }
     to {
-      opacity: 1;    }
+      opacity: 1;
+    }
 }
   
 @keyframes course_menu {
 
     from {
       opacity: 0;
+
     }
     to {
-      opacity: 1;    }
+      opacity: 1;
+    }
 }
 @-webkit-keyframes option_text {
     from {
@@ -36,3 +40,6 @@
       transform: translateY(0px);
     }
 }
+
+// Correction option texts
+
