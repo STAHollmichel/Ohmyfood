@@ -40,3 +40,5 @@
 }
 @mixin nav-gradient {background-image:linear-gradient( #DBDBDB 0%, #DBDBDB 3%, #EAEAEA 10%); 
 width: 100%}
+
+@mixin hidden {overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
