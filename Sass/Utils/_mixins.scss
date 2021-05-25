@@ -42,3 +42,27 @@
 width: 100%}
 
 @mixin hidden {overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+@mixin animation-menu {-webkit-animation: option_text 5s ease-in-out forwards;
+    animation: option_text 5s ease-in-out forwards;}
+
+@mixin heart-full {
+    opacity: 0;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-style: normal;
+    background-size: 100%;
+    background:$hrt-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0.4);
+
+    &:hover { 
+        opacity:1;
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 1s;
+    animation: fontgradient 0.8s ease infinite;
+    -webkit-animation: fontgradient 0.8s ease infinite;}
+}

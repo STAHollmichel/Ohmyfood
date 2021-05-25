@@ -40,6 +40,13 @@
       transform: translateY(0px);
     }
 }
-
-// Correction option texts
-
+@-webkit-keyframes fontgradient { 
+    0%{background-position:30% 52%}
+    50%{background-position:50% 50%}
+    100%{background-position:30% 52%}
+}
+@keyframes fontgradient { 
+    0%{background-position:0% 32%}
+    50%{background-position:90% 52%}
+    100%{background-position:0% 32%}
+}

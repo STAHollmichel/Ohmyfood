@@ -21,6 +21,207 @@ body a {
   color: black;
 }
 
+.loader_wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-linear-gradient(306deg, #9256dc, #ff79da) 0% 10%/3000% 3000%;
+  -webkit-animation: fontgradient 2s ease infinite, fade 5s ease-in-out forwards;
+          animation: fontgradient 2s ease infinite, fade 5s ease-in-out forwards;
+  opacity: 1;
+  position: fixed;
+  z-index: 9999;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 300;
+  font-size: 2em;
+  color: black;
+  -webkit-animation-name: bounceInTop;
+          animation-name: bounceInTop;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+
+.skew {
+  -webkit-animation-name: skew;
+          animation-name: skew;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.letterO {
+  -webkit-animation-name: translate;
+          animation-name: translate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.letter {
+  -webkit-animation-name: showUp;
+          animation-name: showUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes showUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: TranslateX(900px);
+            transform: TranslateX(900px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: TranslateX(900px);
+            transform: TranslateX(900px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes skew {
+  0% {
+    -webkit-transform: skew(60deg);
+            transform: skew(60deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+}
+
+@keyframes skew {
+  0% {
+    -webkit-transform: skew(60deg);
+            transform: skew(60deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+}
+
+@-webkit-keyframes translate {
+  0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes translate {
+  0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes bounceInTop {
+  0% {
+    -webkit-transform: translate3d(0, -600%, 0);
+            transform: translate3d(0, -600%, 0);
+  }
+  58% {
+    -webkit-transform: translate3d(0, 90px, 0);
+            transform: translate3d(0, 90px, 0);
+  }
+  73% {
+    -webkit-transform: translate3d(0, -87px, 0);
+            transform: translate3d(0, -87px, 0);
+  }
+  88% {
+    -webkit-transform: translate3d(0, 37px, 0);
+            transform: translate3d(0, 37px, 0);
+  }
+}
+
+@keyframes bounceInTop {
+  0% {
+    -webkit-transform: translate3d(0, -600%, 0);
+            transform: translate3d(0, -600%, 0);
+  }
+  58% {
+    -webkit-transform: translate3d(0, 90px, 0);
+            transform: translate3d(0, 90px, 0);
+  }
+  73% {
+    -webkit-transform: translate3d(0, -87px, 0);
+            transform: translate3d(0, -87px, 0);
+  }
+  88% {
+    -webkit-transform: translate3d(0, 37px, 0);
+            transform: translate3d(0, 37px, 0);
+  }
+}
+
+@keyframes fontgradient {
+  0% {
+    background-position: 30% 52%;
+  }
+  50% {
+    background-position: 90% 50%;
+  }
+  100% {
+    background-position: 30% 52%;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: -9999px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: -9999px;
+  }
+}
+
 .primarybtn {
   cursor: pointer;
   opacity: 0.8;
@@ -89,6 +290,30 @@ body a {
   }
 }
 
+@-webkit-keyframes fontgradient {
+  0% {
+    background-position: 30% 52%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 30% 52%;
+  }
+}
+
+@keyframes fontgradient {
+  0% {
+    background-position: 0% 32%;
+  }
+  50% {
+    background-position: 90% 52%;
+  }
+  100% {
+    background-position: 0% 32%;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,12 +321,19 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 0px 5px 40px;
+  padding: 10px 0px 5px 0px;
+  position: relative;
 }
 
-header img {
-  width: 80%;
-  height: 80%;
+header h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.8em;
+}
+
+header span {
+  position: absolute;
+  left: 20px;
+  top: 23px;
 }
 
 footer {
@@ -111,7 +343,7 @@ footer {
 footer h4 {
   padding: 15px;
   font-family: 'Shrikhand', cursive;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 100;
 }
 
@@ -157,15 +389,6 @@ footer strong {
   font-weight: 400;
 }
 
-header {
-  position: relative;
-}
-
-header span {
-  position: absolute;
-  left: 20px;
-}
-
 main img {
   width: 100%;
   height: 60vw;
@@ -194,14 +417,15 @@ main img {
 }
 
 .heart_full_menu {
-  opacity: 0;
-  cursor: pointer;
   position: absolute;
   top: 35px;
-  right: 25px;
+  right: 25.1px;
+  opacity: 0;
+  cursor: pointer;
   font-size: 1.4em;
   font-style: normal;
-  background: linear-gradient(173deg, #ff79da 5%, #9256dc 95%);
+  background-size: 100%;
+  background: linear-gradient(206deg, #ff79da, #9256dc) 0% 100%/200% 90%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -210,15 +434,17 @@ main img {
 }
 
 .heart_full_menu:hover {
-  opacity: 100;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  opacity: 1;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  animation: fontgradient 0.8s ease infinite;
+  -webkit-animation: fontgradient 0.8s ease infinite;
 }
 
 .course_menu {
@@ -304,16 +530,21 @@ main img {
 }
 
 #op_1 {
-  -webkit-animation: option_text 3s ease-in-out forwards;
-  animation: option_text 3s ease-in-out forwards;
+  -webkit-animation: option_text 5s ease-in-out forwards;
+  animation: option_text 5s ease-in-out forwards;
 }
 
 #op_2 {
-  -webkit-animation: option_text 4s ease-in-out forwards;
-  animation: option_text 4s ease-in-out forwards;
+  -webkit-animation: option_text 5s ease-in-out forwards;
+  animation: option_text 5s ease-in-out forwards;
 }
 
 #op_3 {
+  -webkit-animation: option_text 5s ease-in-out forwards;
+  animation: option_text 5s ease-in-out forwards;
+}
+
+#op_4 {
   -webkit-animation: option_text 5s ease-in-out forwards;
   animation: option_text 5s ease-in-out forwards;
 }
@@ -484,6 +715,7 @@ h3 {
 }
 
 #how_it_works li {
+  cursor: pointer;
   width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,16 +731,16 @@ h3 {
   position: relative;
 }
 
+#how_it_works li:hover .grey_icon {
+  color: #9256dc;
+}
+
 #how_it_works i {
   padding-right: 20px;
 }
 
 #how_it_works .grey_icon {
   color: grey;
-}
-
-#how_it_works .violet_icon {
-  color: #9256dc;
 }
 
 #restaurant_ads {
@@ -575,14 +807,15 @@ h3 {
 }
 
 .heart_like .heart_full {
-  opacity: 0;
   position: absolute;
-  cursor: pointer;
-  bottom: 0px;
+  bottom: 0.9px;
   right: 0px;
+  opacity: 0;
+  cursor: pointer;
   font-size: 1.4em;
   font-style: normal;
-  background: linear-gradient(173deg, #ff79da 5%, #9256dc 95%);
+  background-size: 100%;
+  background: linear-gradient(206deg, #ff79da, #9256dc) 0% 100%/200% 90%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -591,15 +824,17 @@ h3 {
 }
 
 .heart_like .heart_full:hover {
-  opacity: 100;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  opacity: 1;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  animation: fontgradient 0.8s ease infinite;
+  -webkit-animation: fontgradient 0.8s ease infinite;
 }
 
 .noveau_sticker {
@@ -612,5 +847,102 @@ h3 {
   border-radius: 3px;
   font-weight: 500;
   font-size: 0.8em;
+}
+
+/* ----------- Mobile M ----------- */
+@media screen and (max-width: 375px) and (min-width: 321px) and (-webkit-min-device-pixel-ratio: 3) {
+  #search .search_subtitle {
+    margin: 10px 10px;
+    font-size: 1em;
+  }
+  #how_it_works ol li::before {
+    top: 6vw;
+  }
+  .noveau_sticker {
+    bottom: 59vw;
+  }
+  .heart_like {
+    bottom: 40px;
+  }
+}
+
+/* ----------- Mobile L ----------- */
+@media screen and (max-width: 425px) and (min-width: 376px) and (-webkit-min-device-pixel-ratio: 2) {
+  #search .search_subtitle {
+    margin: 10px 10px;
+    font-size: 1em;
+  }
+  .noveau_sticker {
+    bottom: 60vw;
+  }
+  .heart_like {
+    bottom: 40px;
+  }
+  .restaurand_ad {
+    height: 65vw;
+  }
+}
+
+/* ----------- Tablet S ----------- */
+@media screen and (max-width: 570px) and (min-width: 426px) and (-webkit-min-device-pixel-ratio: 1) {
+  #search .search_subtitle {
+    margin: 10px 60px;
+    font-size: 1em;
+  }
+  #how_it_works li {
+    cursor: pointer;
+    width: 370px;
+  }
+  #how_it_works ol li::before {
+    left: -2.6vw;
+    top: 1.6em;
+  }
+  .noveau_sticker {
+    bottom: 29vw;
+  }
+  .heart_like {
+    bottom: 20px;
+  }
+  .restaurant_ad {
+    width: 45%;
+    height: 30%;
+  }
+  .restaurant_ad img {
+    width: 100%;
+    height: 25vw;
+  }
+  .restaurant_ad figcaption {
+    padding: 5px 11px;
+  }
+}
+
+/* ----------- Tablet L ----------- */
+@media screen and (max-width: 768px) and (min-width: 571px) and (-webkit-min-device-pixel-ratio: 1) {
+  #search .search_subtitle {
+    margin: 10px 60px;
+    font-size: 1em;
+  }
+  #how_it_works li {
+    cursor: pointer;
+    width: 370px;
+  }
+  #how_it_works ol li::before {
+    left: -2.6vw;
+    top: 1.6em;
+  }
+  .noveau_sticker {
+    bottom: 29vw;
+  }
+  .heart_like {
+    bottom: 25px;
+  }
+  .restaurant_ad {
+    width: 45%;
+    height: 35vw;
+  }
+  .restaurant_ad img {
+    width: 100%;
+    height: 25vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
