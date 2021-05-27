@@ -1,9 +1,15 @@
+/////////// Main Elements //////////
+
 main {
-    img { width:100%;
+    background-color: $backgroundcolor-main;
+    img { 
+        width:100%;
         height:60vw;
         object-fit: cover;
     }
 }
+
+/////////// Main Background Image //////////
 
 #img_lpdg { 
     object-position: 0% 70%;
@@ -18,9 +24,11 @@ main {
     object-position: 0% 100%;
 }
 
+/////////// Restaurant Menu //////////
+
 #menu_card {
     border-radius: 40px 40px 0px 0px;
-    background-color: #FFFFFF;
+    background-color: $backgroundcolor-main;
     position: relative;
     top: -40px;
 }
@@ -31,6 +39,8 @@ main {
     font-weight: 100;
     padding:30px 20px;
 }
+
+// Heart Like 
 
 #heart_like {
     position: relative;
@@ -52,8 +62,13 @@ main {
     right: 0.1px;
     @include heart-full;
 }
-.course_menu {-webkit-animation: course_menu 2.5s ease-in-out forwards;
-    animation: course_menu 2.5s ease-in-out forwards;}
+
+// Menu Items
+
+.course_menu {
+    -webkit-animation: course_menu 2.5s ease-in-out forwards;
+    animation: course_menu 2.5s ease-in-out forwards;
+}
 
 .menu_type {
     text-transform: uppercase;
@@ -66,25 +81,23 @@ main {
 
 .menu_type::after {
     content: "";
-position: absolute;
-width: 40px;
-height: 3px;
-bottom: -7px;
-left: 20px;
-background-color: #99e2d0;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: -7px;
+    left: 20px;
+    background-color: $color-stckrbg;
 }
 
 .menu_content {
    display: flex;
    flex-direction: column;
-   
-   
 }
 
 .menu_option {
     cursor:pointer;
     height:57px;
-    box-shadow: 3px 3px 10px #bfbfbf;
+    box-shadow: 3px 3px 10px $color-shadow;
     border-radius: 12px;
     margin: 8px 12px;
     overflow: hidden;
@@ -118,6 +131,7 @@ background-color: #99e2d0;
         
       }
 }
+
 .price_check {
     Position: relative;
     left:60px;
@@ -136,10 +150,13 @@ background-color: #99e2d0;
            background-color:$color-tertiary;
            padding:19px 17px 19px 15px;}
     i { 
-        color:#FFFFFF;
+        color:$color-light;
         font-size: 1.2em;
       }
 }
+
+/////////// Order Button //////////
+
 #order_btn_zone {
     @include flexcenter;
 }
@@ -204,7 +221,6 @@ background-color: #99e2d0;
     .img_background {
         height: 230px;
     }
-
     #img_lpdg { 
         object-position: 0% 2%;
     }

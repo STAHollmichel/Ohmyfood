@@ -1,4 +1,4 @@
-footer { background-color: #353535 ;
+footer { background-color: $color-location ;
     
     h4 { padding: 15px; 
          font-family: 'Shrikhand', cursive; 
@@ -6,7 +6,7 @@ footer { background-color: #353535 ;
          font-weight: 100;
         }
     
-    a { color: white;
+    a { color: $color-light;
         @include flexcenteralignment;
       }
    
@@ -22,7 +22,7 @@ footer { background-color: #353535 ;
 
     #footer_icon2 {font-size: 0.6em;} 
 
-    p { color: white;
+    p { color: $color-light;
         font-weight: 300;
         font-size: 0.8em;
       }

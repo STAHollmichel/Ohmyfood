@@ -18,7 +18,7 @@ body {
 
 body a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .loader_wrapper {
@@ -328,7 +328,7 @@ header {
 header p {
   font-family: 'Shrikhand', cursive;
   font-size: 1.8em;
-  color: black;
+  color: #000000;
 }
 
 header span {
@@ -349,7 +349,7 @@ footer h4 {
 }
 
 footer a {
-  color: white;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,13 +381,17 @@ footer #footer_icon2 {
 }
 
 footer p {
-  color: white;
+  color: #ffffff;
   font-weight: 300;
   font-size: 0.8em;
 }
 
 footer strong {
   font-weight: 400;
+}
+
+main {
+  background-color: #f6f6f6;
 }
 
 main img {
@@ -419,7 +423,7 @@ main img {
 
 #menu_card {
   border-radius: 40px 40px 0px 0px;
-  background-color: #FFFFFF;
+  background-color: #f6f6f6;
   position: relative;
   top: -40px;
 }
@@ -496,7 +500,7 @@ main img {
   height: 3px;
   bottom: -7px;
   left: 20px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
 }
 
 .menu_content {
@@ -606,7 +610,7 @@ main img {
 }
 
 .price_check i {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.2em;
 }
 
@@ -949,7 +953,6 @@ nav div {
 #map_location {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#DBDBDB), color-stop(3%, #DBDBDB), color-stop(10%, #EAEAEA));
   background-image: linear-gradient(#DBDBDB 0%, #DBDBDB 3%, #EAEAEA 10%);
-  width: 100%;
 }
 
 #map_location i {

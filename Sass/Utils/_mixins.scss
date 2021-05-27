@@ -1,16 +1,44 @@
-@mixin flexcenter { display: flex;
-                    justify-content: center;
+///////// Flex Items /////////
+
+@mixin flexcenter { 
+    display: flex;
+    justify-content: center;
     
 }
 
-@mixin flexrow { display: flex;
-                 flex-flow: row wrap;
-                 justify-content: center;
+@mixin flexrow { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-@mixin flexcenteralignment { display:flex;
-                             align-items: center;
+@mixin flexcenteralignment { 
+    display:flex;
+    align-items: center;
 }
+
+@mixin flexcolumn { 
+    display: flex;
+    flex-direction: column; 
+}
+
+///////// Shadows & Overflow /////////
+
+@mixin box-shadow($colour: $color-shadow) {
+    box-shadow: 3px 3px 10px $colour;
+}
+
+@mixin box-shadow--dark($colour: $color-shadow--dark) {
+    box-shadow: 3px 3px 10px $colour;
+}
+
+@mixin hidden {
+    overflow:hidden; 
+    text-overflow: ellipsis;
+     white-space: nowrap;
+}
+
+///////// Buttons /////////
 
 @mixin primarybtn {
     cursor: pointer;
@@ -24,25 +52,13 @@
     margin: 15px 10px 40px 10px;
     background: $btn-gradient;
     @include box-shadow;
-    &:hover {
-      opacity: 0.65;
-      transition: 0.3s;
-      @include box-shadow--dark;
-      transition: 0.3s;}
+        &:hover {
+            opacity: 0.65;
+            transition: 0.3s;
+            @include box-shadow--dark;
+            transition: 0.3s;
+        }
 }
-
-@mixin box-shadow($colour: $color-shadow) {
-    box-shadow: 3px 3px 10px $colour;
-}
-
-@mixin box-shadow--dark($colour: $color-shadow--dark) {
-    box-shadow: 3px 3px 10px $colour;
-}
-@mixin nav-gradient {background-image:linear-gradient( #DBDBDB 0%, #DBDBDB 3%, #EAEAEA 10%); 
-width: 100%}
-
-@mixin hidden {overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
-
 
 @mixin heart-full {
     opacity: 0;

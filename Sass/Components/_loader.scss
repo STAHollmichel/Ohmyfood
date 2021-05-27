@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(306deg, #9256dc,#ff79da) 0% 10% / 3000% 3000%;
+  background: $ldr-gradient;
   animation: fontgradient 2s ease infinite, fade 5s ease-in-out forwards;
   opacity: 1;
   position: fixed;
