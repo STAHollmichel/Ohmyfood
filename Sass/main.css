@@ -390,11 +390,11 @@ footer strong {
   font-weight: 400;
 }
 
-main {
+#main_menu_page {
   background-color: #f6f6f6;
 }
 
-main img {
+#main_menu_page img {
   width: 100%;
   height: 60vw;
   -o-object-fit: cover;
