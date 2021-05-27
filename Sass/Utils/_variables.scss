@@ -3,17 +3,18 @@ $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 
 $backgroundcolor-main: #f6f6f6;
-$backgroundcolor-dark: darken($backgroundcolor-main, 4.71);
-$backgroundcolor-darker: darken($backgroundcolor-main, 13.73);
-$backgroundcolor-footer: darken($backgroundcolor-main, 75.69);
 $background-gradient: linear-gradient(
   50deg,
   $color-secondary 10%,
-  $color-primary 90%
-);
+  $color-primary 90%);
 
 $color-shadow: #bfbfbf;
 $color-shadow--dark: darken($color-shadow, 70);
 $color-light: #ffffff;
+$color-dark: #000000;
+$color-location: #353535;
+$color-3icons: #808080;
+$color-stckr: #008766;
+$color-stckrbg: #99E2D0;
 $btn-gradient:linear-gradient(173deg, $color-secondary 5%, $color-primary 95%);
 $hrt-gradient:linear-gradient(206deg,#ff79da,#9256dc) 0% 100% / 200% 90%;

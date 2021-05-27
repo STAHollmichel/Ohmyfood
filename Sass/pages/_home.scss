@@ -1,127 +1,172 @@
-body { counter-reset: list_number;}
+/////////// Main Elements //////////
 
-/////////// NAV //////////
-#search {
-    @include flexrow;
-    text-align: center;
-    background-color: $backgroundcolor-main;
-    .search_subtitle { margin: 10px 0px;
-                       font-weight: 300;
-                       font-size: 0.95em;
-                     }
-    .primarybtn p {color:white}
+body { 
+    counter-reset: list_number;
 }
 
-#map_location i, p { color:#353535;}
-#map_location {
-            @include nav-gradient;
-            i { padding-top: 15px;}
-            p { padding: 15px;
-                font-weight: 500;
-              }
+h2 { 
+    font-size: 1.3em;
 }
+
+h3 {
+    font-size: 1em;
+}
+
+/////////// Nav //////////
 
 nav { 
-    div { width:100%;
+    div { 
+        width:100%;
         @include flexcenter;
     }
 }
 
-.seach_tittle { font-size: 1.35em;
-     margin: 35px 35px 0px 35px;
-   }
-h2 { font-size: 1.3em;}
-h3 { font-size: 1em;}
+#search {
+    @include flexrow;
+    text-align: center;
+    background-color: $backgroundcolor-main;
+    .search_subtitle {
+        margin: 10px 0px;
+        font-weight: 300;
+        font-size: 0.95em;
+    }
+    .primarybtn p {
+        color: $color-light;
+    }
+}
 
-#map_location i, p { color:#353535;}
+#map_location i, p { 
+    color: $color-location;
+}
 
+#map_location {
+    @include nav-gradient;
+    i { 
+        padding-top: 15px;
+    }
+    p { padding: 15px;
+        font-weight: 500;
+    }
+}
+
+.seach_tittle { 
+    font-size: 1.35em;
+    margin: 35px 35px 0px 35px;
+}
+
+/////////// How It Works //////////
 
 #how_it_works {
 
     h2 { margin: 40px 10px 10px 30px;}
     
-    ol li::before { content: counter(list_number);
-                    counter-increment: list_number;
-                    background-color: $color-primary;
-                    color: #FFFFFF;
-                    border-radius: 50%;
-                    padding: 2px 6.5px;
-                    position: absolute;
-                    left: -1em;
-                    top: 1.5em;
-                    font-weight: 400;
-                   }
-
-    ol { @include flexrow;
-         p { color:black;}                
+    ol li::before { 
+        content: counter(list_number);
+        counter-increment: list_number;
+        background-color: $color-primary;
+        color: $color-light;
+        border-radius: 50%;
+        padding: 2px 6.5px;
+        position: absolute;
+        left: -1em;
+        top: 1.5em;
+        font-weight: 400;
+    }
+    ol { 
+        @include flexrow;
+        p { 
+            color:$color-dark;
+        }                
+    }
+    li { 
+        cursor: pointer;
+        width:85%;
+        display:flex;
+        background-color: $backgroundcolor-main;
+        box-shadow: 3px 3px 10px $color-shadow;
+        padding: 25px;
+        border-radius: 25px;
+        margin: 10px 10px 10px 30px;
+        font-size: 0.9em;
+        font-weight: 500;
+        position: relative;
+        &:hover .grey_icon {
+            color: $color-primary;
         }
-
-    li { cursor: pointer;
-         width:85%;
-         display:flex;
-         background-color: #f6f6f6;
-         box-shadow: 3px 3px 10px #bfbfbf;
-         padding: 25px;
-         border-radius: 25px;
-         margin: 10px 10px 10px 30px;
-         font-size: 0.9em;
-         font-weight: 500;
-         position: relative;
-         &:hover .grey_icon {color: $color-primary;}
-        }
-
-    i { padding-right: 20px;}
-    .grey_icon { color: grey;}
-    
-    
+    }
+    i { 
+        padding-right: 20px;
+    }
+    .grey_icon { 
+        color: $color-3icons;
+    } 
 }
+
+/////////// Restaurant Ads //////////
+
 #restaurant_ads {
-    margin-bottom: 15vw;
-    h2 { margin: 40px 10px 10px 30px;}
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $backgroundcolor-main;
+    h2 { 
+        margin: 0px 10px 10px 30px;
+    }
 }
-#container_ads { @include flexrow; 
-                 align-content: space-between;
+
+#container_ads { 
+    @include flexrow; 
+    align-content: space-between;
 }
+
 .restaurant_ad {
    position: relative;
    width:90%;
    height:70vw;
-   box-shadow: 3px 3px 10px #bfbfbf;
+   box-shadow: 3px 3px 10px $color-shadow;
    border-radius: 13px;
    margin:10px;
-   img {width:100%;
+   img {
+       width:100%;
        height:49vw;
        border-radius: 13px 13px 0px 0px;
        object-fit: cover;
        object-position: 40% 60%;          
-       }
-    figcaption { padding: 10px 11px;}
-    p {font-size: 0.95em;}
+    }
+    figcaption { 
+        padding: 10px 11px;
+    }
+    p {
+        font-size: 0.95em;
+    }
 }
-.heart_like  { position: absolute;
-    
+.heart_like  { 
+    position: absolute;
     bottom: 30px;
     right: 20px;
-    .heart_empty { position: relative;
-                   cursor:pointer;
-                   font-size:1.4em;
-                 }
-    .heart_full { position: absolute;
-                  bottom: 0.9px;
-                  right:  0px;
-                  @include heart-full;
-                }
-}                      
+    .heart_empty { 
+        position: relative;
+       cursor:pointer;
+       font-size:1.4em;
+    }
+    .heart_full { 
+        position: absolute;
+        bottom: 0.9px;
+        right:  0px;
+        @include heart-full;
+    }
+}
+
 .nouveau_sticker {         
-      position:absolute;
-        right: 10px;
-        bottom: 185px;
-        color:#008766;
-        background-color: #99E2D0;
-        padding: 5px 10px;
-        border-radius: 3px;
-        font-weight: 500;
-        font-size: 0.8em;
+    position:absolute;
+    right: 10px;
+    bottom: 185px;
+    color: $color-stckr;
+    background-color: $color-stckrbg;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 0.8em;
 }
 
 //////////// Media Queries ////////////
@@ -306,9 +351,6 @@ h3 { font-size: 1em;}
     .heart_like {
         bottom: 20px;
     }
-    #restaurant_ads {
-        margin-bottom: 30px;
-    }
 
     .restaurant_ad {
         width: 255px;
@@ -355,7 +397,6 @@ h3 { font-size: 1em;}
 
     #search .primarybtn p {
         font-size: 1.1em;
-        color: white;
     }
 
     #how_it_works {
@@ -388,9 +429,6 @@ h3 { font-size: 1em;}
         }
     }
 
-    #restaurant_ads {
-        margin-bottom: 4vw;
-    }
     .restaurant_ad {
         width: 22vw;
         height: 18.5vw;
@@ -421,12 +459,12 @@ h3 { font-size: 1em;}
 
     nav #map_location {
         i {
-        font-size: 1.1em;
+            font-size: 1.1em;
         }
         p {
-        padding: 15px;
-        font-weight: 600;
-        font-size: 1.1em;
+            padding: 15px;
+            font-weight: 600;
+            font-size: 1.1em;
         }
     }
 
@@ -442,7 +480,6 @@ h3 { font-size: 1em;}
 
     #search .primarybtn p {
         font-size: 1.1em;
-        color: white;
     }
 
     #how_it_works {
@@ -482,9 +519,8 @@ h3 { font-size: 1em;}
     }
 
     #restaurant_ads {
-        margin-bottom: 4vw;
         h2 {
-            margin: 40px 0px 20px 4.4vw;
+            margin: 0px 0px 20px 4.4vw;
         }
     
     }

@@ -48,7 +48,7 @@ body a {
   font-family: 'Shrikhand', cursive;
   font-weight: 300;
   font-size: 2em;
-  color: black;
+  color: #000000;
   -webkit-animation-name: bounceInTop;
           animation-name: bounceInTop;
   -webkit-animation-duration: 1.4s;
@@ -74,6 +74,98 @@ body a {
           animation-name: showUp;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+}
+
+.primarybtn {
+  cursor: pointer;
+  opacity: 0.8;
+  border: none;
+  border-radius: 25px;
+  padding: 16px 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 15px 10px 40px 10px;
+  background: linear-gradient(173deg, #ff79da 5%, #9256dc 95%);
+  -webkit-box-shadow: 3px 3px 10px #bfbfbf;
+          box-shadow: 3px 3px 10px #bfbfbf;
+}
+
+.primarybtn:hover {
+  opacity: 0.65;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 3px 3px 10px #0d0d0d;
+          box-shadow: 3px 3px 10px #0d0d0d;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes course_menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes course_menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes option_text {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes option_text {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fontgradient {
+  0% {
+    background-position: 0% 32%;
+  }
+  50% {
+    background-position: 90% 52%;
+  }
+  100% {
+    background-position: 0% 32%;
+  }
+}
+
+@keyframes fontgradient {
+  0% {
+    background-position: 0% 32%;
+  }
+  50% {
+    background-position: 90% 52%;
+  }
+  100% {
+    background-position: 0% 32%;
+  }
 }
 
 @-webkit-keyframes showUp {
@@ -219,98 +311,6 @@ body a {
   }
   100% {
     left: -9999px;
-  }
-}
-
-.primarybtn {
-  cursor: pointer;
-  opacity: 0.8;
-  border: none;
-  border-radius: 25px;
-  padding: 16px 20px;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin: 15px 10px 40px 10px;
-  background: linear-gradient(173deg, #ff79da 5%, #9256dc 95%);
-  -webkit-box-shadow: 3px 3px 10px #bfbfbf;
-          box-shadow: 3px 3px 10px #bfbfbf;
-}
-
-.primarybtn:hover {
-  opacity: 0.65;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-box-shadow: 3px 3px 10px #0d0d0d;
-          box-shadow: 3px 3px 10px #0d0d0d;
-  transition: 0.3s;
-}
-
-@-webkit-keyframes course_menu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes course_menu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes option_text {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes option_text {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes fontgradient {
-  0% {
-    background-position: 30% 52%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 30% 52%;
-  }
-}
-
-@keyframes fontgradient {
-  0% {
-    background-position: 0% 32%;
-  }
-  50% {
-    background-position: 90% 52%;
-  }
-  100% {
-    background-position: 0% 32%;
   }
 }
 
@@ -899,6 +899,24 @@ body {
   counter-reset: list_number;
 }
 
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+nav div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,7 +939,7 @@ body {
 }
 
 #search .primarybtn p {
-  color: white;
+  color: #ffffff;
 }
 
 #map_location i, p {
@@ -943,31 +961,9 @@ body {
   font-weight: 500;
 }
 
-nav div {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .seach_tittle {
   font-size: 1.35em;
   margin: 35px 35px 0px 35px;
-}
-
-h2 {
-  font-size: 1.3em;
-}
-
-h3 {
-  font-size: 1em;
-}
-
-#map_location i, p {
-  color: #353535;
 }
 
 #how_it_works h2 {
@@ -978,7 +974,7 @@ h3 {
   content: counter(list_number);
   counter-increment: list_number;
   background-color: #9256dc;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50%;
   padding: 2px 6.5px;
   position: absolute;
@@ -1001,7 +997,7 @@ h3 {
 }
 
 #how_it_works ol p {
-  color: black;
+  color: #000000;
 }
 
 #how_it_works li {
@@ -1030,15 +1026,18 @@ h3 {
 }
 
 #how_it_works .grey_icon {
-  color: grey;
+  color: #808080;
 }
 
 #restaurant_ads {
-  margin-bottom: 15vw;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
 }
 
 #restaurant_ads h2 {
-  margin: 40px 10px 10px 30px;
+  margin: 0px 10px 10px 30px;
 }
 
 #container_ads {
@@ -1276,9 +1275,6 @@ h3 {
   .heart_like {
     bottom: 20px;
   }
-  #restaurant_ads {
-    margin-bottom: 30px;
-  }
   .restaurant_ad {
     width: 255px;
     height: 195px;
@@ -1316,7 +1312,6 @@ h3 {
   }
   #search .primarybtn p {
     font-size: 1.1em;
-    color: white;
   }
   #how_it_works ol {
     -webkit-box-pack: space-evenly;
@@ -1344,9 +1339,6 @@ h3 {
   }
   .heart_like .heart_full {
     font-size: 2vw;
-  }
-  #restaurant_ads {
-    margin-bottom: 4vw;
   }
   .restaurant_ad {
     width: 22vw;
@@ -1390,7 +1382,6 @@ h3 {
   }
   #search .primarybtn p {
     font-size: 1.1em;
-    color: white;
   }
   #how_it_works h2 {
     text-align: center;
@@ -1424,11 +1415,8 @@ h3 {
   .heart_like .heart_full {
     font-size: 2vw;
   }
-  #restaurant_ads {
-    margin-bottom: 4vw;
-  }
   #restaurant_ads h2 {
-    margin: 40px 0px 20px 4.4vw;
+    margin: 0px 0px 20px 4.4vw;
   }
   .restaurant_ad {
     width: 22vw;
