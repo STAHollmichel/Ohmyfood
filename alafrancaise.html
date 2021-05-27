@@ -9,130 +9,134 @@
     <script src="https://kit.fontawesome.com/ed2dfb15e4.js" crossorigin="anonymous"></script>
 </head>
     <body>
-        <!-- Header     -->
+        <!-- Header -->
         <header>
-            <a href="index.html"><span><i class="fas fa-arrow-left"></i></span><img src="images/logo/ohmyfood@2x.svg" alt="logo"></a>
+            <span><a href="index.html"><i class="fas fa-arrow-left"></i></a></span><p><a href="index.html">ohmyfood</a></p>
         </header>
         <!-- Main -->
         <main>
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="img_background" id="img_alf">
         <!-- Restaurant Menu -->
             <section id="menu_card">
                 <h1 id="restaurant_id">À la française</h1>
-                <span>
+                <div id="heart_like">
                     <i class="far coeur--empty fa-heart heart_empty_menu"></i>
                     <i class="fas fa-heart heart_full_menu"></i>    
-                </span>
+                </div >
+                <div id="menu_wrapper">
                 <!-- Starters -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Entrées</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zestes d'orange</p>
-                            </div> 
-                            <div class="price_check">
-                                <p>25€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                    <article class="course_menu">
+                        <h2 class="menu_type">Entrées</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Tartare de poulpe acidulé</h3>
+                                    <p>Aux zestes d'orange</p>
+                                </div> 
+                                <div class="price_check">
+                                    <p>25€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Velouté de légumes d'antan</h3>
+                                    <p>Carotte, panais, topinambour</p>
+                                </div> 
+                                <div class="price_check">
+                                    <p>35€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Soupe à l'oignon</h3>
+                                    <p>Revisitée</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>20€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Velouté de légumes d'antan</h3>
-                                <p>Carotte, panais, topinambour</p>
-                            </div> 
-                            <div class="price_check">
-                                <p>35€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                    </article>
+                    <!-- Mains -->
+                    <article class="course_menu">
+                        <h2 class="menu_type">Plats</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Coquilles Saint-Jacques</h3>
+                                    <p>Accompagnées d'une purée de panais</p>
+                                </div> 
+                                <div class="price_check">
+                                    <p>40€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Magret de canard</h3>
+                                    <p>Et parmentier de pommes de terre</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>35€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                    <p>Sur son lit de gnocchis aux légumes</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>44€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Soupe à l'oignon</h3>
-                                <p>Revisitée</p>
+                    </article>
+                    <!-- Desserts -->
+                    <article class="course_menu">
+                        <h2 class="menu_type">Desserts</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Pétales de violettes glacés</h3>
+                                    <p>Et purée de noisettes</p>
+                                </div> 
+                                <div class="price_check">
+                                    <p>18€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                            <div class="price_check">
-                                <p>20€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Fondant au chocolat</h3>
+                                    <p>Revisité</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>32€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Mains -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Plats</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Coquilles Saint-Jacques</h3>
-                                <p>Accompagnées d'une purée de panais</p>
-                            </div> 
-                            <div class="price_check">
-                                <p>40€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Magret de canard</h3>
-                                <p>Et parmentier de pommes de terre</p>
-                            </div>
-                            <div class="price_check">
-                                <p>35€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                                <p>Sur son lit de gnocchis aux légumes</p>
-                            </div>
-                            <div class="price_check">
-                                <p>44€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Millefeuille croustillant</h3>
+                                    <p>Myrtilles et pâte d’amande</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>23€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </article>
-                <!-- Desserts -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Desserts</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Pétales de violettes glacés</h3>
-                                <p>Et purée de noisettes</p>
-                            </div> 
-                            <div class="price_check">
-                                <p>18€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Fondant au chocolat</h3>
-                                <p>Revisité</p>
-                            </div>
-                            <div class="price_check">
-                                <p>32€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Millefeuille croustillant</h3>
-                                <p>Myrtilles et pâte d’amande</p>
-                            </div>
-                            <div class="price_check">
-                                <p>23€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
                 <!-- Order Button -->
-                <a href="#comander" class="primarybtn" id="order_btn">Commander</a>
+                <div id="order_btn_zone">
+                    <a href="#comander" class="primarybtn" id="order_btn">Commander</a>
+                </div>
             </section>            
         </main>
         <!-- Footer -->

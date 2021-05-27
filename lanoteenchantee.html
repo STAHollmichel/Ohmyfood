@@ -9,140 +9,144 @@
     <script src="https://kit.fontawesome.com/ed2dfb15e4.js" crossorigin="anonymous"></script>
 </head>
     <body>
-        <!-- Header     -->
+        <!-- Header -->
         <header>
-            <a href="index.html"><span><i class="fas fa-arrow-left"></i></span><img src="images/logo/ohmyfood@2x.svg" alt="logo"></a>
+            <span><a href="index.html"><i class="fas fa-arrow-left"></i></a></span><p><a href="index.html">ohmyfood</a></p>
         </header>
         <!-- Main -->
         <main>
-            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="img_background" id="img_lne">
         <!-- Restaurant Menu -->
             <section id="menu_card">
                 <h1 id="restaurant_id">La note enchantée</h1>
-                <span>
+                <div id="heart_like">
                     <i class="far coeur--empty fa-heart heart_empty_menu"></i>
                     <i class="fas fa-heart heart_full_menu"></i>    
-                </span>
+                </div>
+                <div id="menu_wrapper">
                 <!-- Starters -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Entrées</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Ravioles de foie gras</h3>
-                                <p>Accompagnés de leur crème à la truffe</p> 
+                    <article class="course_menu">
+                        <h2 class="menu_type">Entrées</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Ravioles de foie gras</h3>
+                                    <p>Accompagnés de leur crème à la truffe</p> 
+                                </div>
+                                <div class="price_check">
+                                    <p>25€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                                </div>
+                                <div class="menu_option">
+                                    <div class="option_text">
+                                        <h3>Caviar osciètre</h3>
+                                        <p>Sur blini à la farine de blé noir</p>
+                                    </div>
+                                    <div class="price_check">
+                                        <p>35€</p>
+                                        <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                    </div>
+                                </div>
+                                <div class="menu_option">
+                                    <div class="option_text">
+                                        <h3>Homard et espuma de potiron</h3>
+                                        <p>Mariné aux zestes d'orange</p>
+                                    </div>
+                                    <div class="price_check">
+                                        <p>20€</p>
+                                        <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                    </div>
+                                </div>
+                                <div class="menu_option">
+                                    <div class="option_text">
+                                        <h3>Foie gras de canard cuit entier</h3>
+                                        <p>Confiture de figue et pain toasté</p>
+                                    </div>
+                                    <div class="price_check">
+                                        <p>35€</p>
+                                        <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="price_check">
-                                <p>25€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                    </article>
+                    <!-- Mains -->
+                    <article class="course_menu">
+                        <h2 class="menu_type">Plats</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Noix de coquilles Saint-Jacques</h3>
+                                    <p>Sur lit de purée de céleri-rave</p> 
+                                </div>
+                                <div class="price_check">
+                                    <p>40€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Caviar osciètre</h3>
-                                <p>Sur blini à la farine de blé noir</p>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Langoustine poêlée</h3>
+                                    <p>Purée de patate douce</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>35€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                            <div class="price_check">
-                                <p>35€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Homard et espuma de potiron</h3>
-                                <p>Mariné aux zestes d'orange</p>
-                            </div>
-                            <div class="price_check">
-                                <p>20€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="menu_option">
-                        <div class="option_text">
-                            <h3>Foie gras de canard cuit entier</h3>
-                            <p>Confiture de figue et pain toasté</p>
-                        </div>
-                        <div class="price_check">
-                            <p>35€</p>
-                            <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                        </div>
-                    </div>
-                </article>
-                <!-- Mains -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Plats</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Noix de coquilles Saint-Jacques</h3>
-                                <p>Sur lit de purée de céleri-rave</p> 
-                            </div>
-                            <div class="price_check">
-                                <p>40€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Langoustine poêlée</h3>
-                                <p>Purée de patate douce</p>
-                            </div>
-                            <div class="price_check">
-                                <p>35€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Mijoté de queue de boeuf</h3>
-                                <p>Et riz sauvage aux zestes de citron</p>
-                            </div>
-                            <div class="price_check">
-                                <p>44€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Desserts -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Desserts</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Macaron noisette et chocolat</h3>
-                                <p>Glace au caramel brun et sel de Guérande</p> 
-                            </div>
-                            <div class="price_check">
-                                <p>18€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Mijoté de queue de boeuf</h3>
+                                    <p>Et riz sauvage aux zestes de citron</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>44€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Baba au rhum revisité</h3>
-                                <p>Avec son coulis de citron</p>
+                    </article>
+                    <!-- Desserts -->
+                    <article class="course_menu">
+                        <h2 class="menu_type">Desserts</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Macaron noisette et chocolat</h3>
+                                    <p>Glace au caramel brun et sel de Guérande</p> 
+                                </div>
+                                <div class="price_check">
+                                    <p>18€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                            <div class="price_check">
-                                <p>22€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Baba au rhum revisité</h3>
+                                    <p>Avec son coulis de citron</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>22€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Tarte au citron meringuée</h3>
+                                    <p>Déstructurée</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>23€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Tarte au citron meringuée</h3>
-                                <p>Déstructurée</p>
-                            </div>
-                            <div class="price_check">
-                                <p>23€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
                 <!-- Order Button -->
-                <a href="#comander" class="primarybtn" id="order_btn">Commander</a>
+                <div id="order_btn_zone">
+                    <a href="#comander" class="primarybtn" id="order_btn">Commander</a>
+                </div>
             </section>            
         </main>
         <!-- Footer -->

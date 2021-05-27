@@ -43,8 +43,6 @@ width: 100%}
 
 @mixin hidden {overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
 
-@mixin animation-menu {-webkit-animation: option_text 5s ease-in-out forwards;
-    animation: option_text 5s ease-in-out forwards;}
 
 @mixin heart-full {
     opacity: 0;
@@ -54,7 +52,6 @@ width: 100%}
     background-size: 100%;
     background:$hrt-gradient;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(0.4);
 

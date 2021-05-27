@@ -9,130 +9,134 @@
     <script src="https://kit.fontawesome.com/ed2dfb15e4.js" crossorigin="anonymous"></script>
 </head>
     <body>
-        <!-- Header     -->
+        <!-- Header -->
         <header>
-            <a href="index.html"><span><i class="fas fa-arrow-left"></i></span><img src="images/logo/ohmyfood@2x.svg" alt="logo"></a>
+            <span><a href="index.html"><i class="fas fa-arrow-left"></i></a></span><p><a href="index.html">ohmyfood</a></p>
         </header>
         <!-- Main -->
-        <main id="background_image">
-            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">>
+        <main>
+            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="img_background" id="img_ldds">
         <!-- Restaurant Menu -->
             <section id="menu_card">
                 <h1 id="restaurant_id">Le délice des sens</h1>
-                <span>
+                <div id="heart_like">
                     <i class="far coeur--empty fa-heart heart_empty_menu"></i>
                     <i class="fas fa-heart heart_full_menu"></i>    
-                </span>
+                </div>
+                <div id="menu_wrapper">
                 <!-- Starters -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Entrées</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Tartare de thon</h3>
-                                <p>Assaisonné au yuzu</p> 
+                    <article class="course_menu">
+                        <h2 class="menu_type">Entrées</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Tartare de thon</h3>
+                                    <p>Assaisonné au yuzu</p> 
+                                </div>
+                                <div class="price_check">
+                                    <p>25€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                            <div class="price_check">
-                                <p>25€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Bouchée de homard croustillant</h3>
+                                    <p>Et sa farandole de petits légumes</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>35€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Bouchée de homard croustillant</h3>
-                                <p>Et sa farandole de petits légumes</p>
-                            </div>
-                            <div class="price_check">
-                                <p>35€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Velouté de cèpes</h3>
-                                <p>Aux truffes</p>
-                            </div>
-                            <div class="price_check">
-                                <p>20€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Mains -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Plats</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Poulet rôti aux herbes de Provence</h3>
-                                <p>Et sa crème de truffe</p> 
-                            </div>
-                            <div class="price_check">
-                                <p>40€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Velouté de cèpes</h3>
+                                    <p>Aux truffes</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>20€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Langouste rôtie</h3>
-                                <p>Et ses légumes de saison</p>
+                    </article>
+                    <!-- Mains -->
+                    <article class="course_menu">
+                        <h2 class="menu_type">Plats</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Poulet rôti aux herbes de Provence</h3>
+                                    <p>Et sa crème de truffe</p> 
+                                </div>
+                                <div class="price_check">
+                                    <p>40€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                            <div class="price_check">
-                                <p>35€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Langouste rôtie</h3>
+                                    <p>Et ses légumes de saison</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>35€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Côte de boeuf Angus</h3>
-                                <p>Et sa purée de panais</p>
-                            </div>
-                            <div class="price_check">
-                                <p>44€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Desserts -->
-                <article class="course_menu">
-                    <h2 class="menu_type">Desserts</h2>
-                    <div class="menu_content">
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Farandole de desserts</h3>
-                                <p>Du chef</p> 
-                            </div>
-                            <div class="price_check">
-                                <p>18€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Crème brulée</h3>
-                                <p>Revisitée</p>
-                            </div>
-                            <div class="price_check">
-                                <p>22€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Côte de boeuf Angus</h3>
+                                    <p>Et sa purée de panais</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>44€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu_option">
-                            <div class="option_text">
-                                <h3>Tiramisu</h3>
-                                <p>À la noisette</p>
+                    </article>
+                    <!-- Desserts -->
+                    <article class="course_menu">
+                        <h2 class="menu_type">Desserts</h2>
+                        <div class="menu_content">
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Farandole de desserts</h3>
+                                    <p>Du chef</p> 
+                                </div>
+                                <div class="price_check">
+                                    <p>18€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
-                            <div class="price_check">
-                                <p>23€</p>
-                                <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Crème brulée</h3>
+                                    <p>Revisitée</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>22€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                            <div class="menu_option">
+                                <div class="option_text">
+                                    <h3>Tiramisu</h3>
+                                    <p>À la noisette</p>
+                                </div>
+                                <div class="price_check">
+                                    <p>23€</p>
+                                    <span class="checkbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
                 <!-- Order Button -->
-                <a href="#comander" class="primarybtn" id="order_btn">Commander</a>
+                <div id="order_btn_zone">
+                    <a href="#comander" class="primarybtn" id="order_btn">Commander</a>
+                </div>    
             </section>            
         </main>
         <!-- Footer -->
