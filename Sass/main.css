@@ -100,6 +100,92 @@ body a {
   transition: 0.3s;
 }
 
+.heart_like {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+
+.heart_like .heart_empty {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+
+.heart_like .heart_full {
+  position: absolute;
+  bottom: 0.9px;
+  right: 0px;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-style: normal;
+  background-size: 100%;
+  background: linear-gradient(206deg, #ff79da, #9256dc) 0% 100%/200% 90%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+.heart_like .heart_full:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  animation: fontgradient 0.8s ease infinite;
+  -webkit-animation: fontgradient 0.8s ease infinite;
+}
+
+#heart_like {
+  position: relative;
+  top: -58px;
+  right: 25px;
+}
+
+.heart_empty_menu {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  right: 0px;
+  font-size: 1.4em;
+}
+
+.heart_full_menu {
+  position: absolute;
+  top: 0px;
+  right: 0.1px;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-style: normal;
+  background-size: 100%;
+  background: linear-gradient(206deg, #ff79da, #9256dc) 0% 100%/200% 90%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+.heart_full_menu:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  animation: fontgradient 0.8s ease infinite;
+  -webkit-animation: fontgradient 0.8s ease infinite;
+}
+
 @-webkit-keyframes course_menu {
   from {
     opacity: 0;
@@ -433,50 +519,6 @@ footer strong {
   font-size: 1.4em;
   font-weight: 100;
   padding: 30px 20px;
-}
-
-#heart_like {
-  position: relative;
-  top: -58px;
-  right: 25px;
-}
-
-.heart_empty_menu {
-  position: absolute;
-  cursor: pointer;
-  top: 0px;
-  right: 0px;
-  font-size: 1.4em;
-}
-
-.heart_full_menu {
-  position: absolute;
-  top: 0px;
-  right: 0.1px;
-  opacity: 0;
-  cursor: pointer;
-  font-size: 1.4em;
-  font-style: normal;
-  background-size: 100%;
-  background: linear-gradient(206deg, #ff79da, #9256dc) 0% 100%/200% 90%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transform: scale(0.4);
-          transform: scale(0.4);
-}
-
-.heart_full_menu:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  animation: fontgradient 0.8s ease infinite;
-  -webkit-animation: fontgradient 0.8s ease infinite;
 }
 
 .course_menu {
@@ -1084,48 +1126,6 @@ nav div {
 
 .restaurant_ad p {
   font-size: 0.95em;
-}
-
-.heart_like {
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
-}
-
-.heart_like .heart_empty {
-  position: relative;
-  cursor: pointer;
-  font-size: 1.4em;
-}
-
-.heart_like .heart_full {
-  position: absolute;
-  bottom: 0.9px;
-  right: 0px;
-  opacity: 0;
-  cursor: pointer;
-  font-size: 1.4em;
-  font-style: normal;
-  background-size: 100%;
-  background: linear-gradient(206deg, #ff79da, #9256dc) 0% 100%/200% 90%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transform: scale(0.4);
-          transform: scale(0.4);
-}
-
-.heart_like .heart_full:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  animation: fontgradient 0.8s ease infinite;
-  -webkit-animation: fontgradient 0.8s ease infinite;
 }
 
 .nouveau_sticker {

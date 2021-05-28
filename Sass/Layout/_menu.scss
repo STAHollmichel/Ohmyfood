@@ -40,29 +40,6 @@
     padding:30px 20px;
 }
 
-// Heart Like 
-
-#heart_like {
-    position: relative;
-    top: -58px;
-    right: 25px;
-}
-
-.heart_empty_menu {
-    position: absolute;
-    cursor: pointer;
-    top: 0px;
-    right: 0px;
-    font-size: 1.4em;
-}
-
-.heart_full_menu {
-    position:absolute;
-    top: 0px;
-    right: 0.1px;
-    @include heart-full;
-}
-
 // Menu Items
 
 .course_menu {
